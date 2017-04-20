@@ -53,19 +53,50 @@ body {
     box-sizing: border-box;
 }
 
+.main-panel {
+}
+
+.main-image {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+}
+
 .fixed-header, .fixed-footer {
     width: 100%;
     position: fixed;        
-    padding: 10px 0;
  }
 
- .fixed-header {
+.fixed-header {
     top: 0;
+    padding: 20px;
+    text-align: right;
 }
 
 .fixed-footer {
     bottom: 0;
-    height: 20%;
-    background: #333;
+    height: 100px;
+    background: #000;
     color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.fixed-footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.fixed-footer li {
+    display: inline;
+    padding: 10px 10px;
+}
+
+.title {
+    padding-right: 40px;
+}
+
+
+
