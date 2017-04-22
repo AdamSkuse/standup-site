@@ -74,12 +74,32 @@ h1 + p {
 }
 
 .main-panel {
+    font-family: 'IM Fell Great Primer', serif;
+    line-height: 125%;
 }
 
 .main-image {
     z-index: -1;
     position: fixed;
     bottom: 0;
+}
+
+.panel-wrapper {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    width: 30%;
+    background-color: #fff;
+    padding: 10px;
+
+}
+
+.about-panel, .video-panel, .podcasts-panel, .webcam-panel {
+    display: none;
+}
+
+.show-panel {
+    display: block;
 }
 
 .fixed-header, .fixed-footer {
@@ -116,6 +136,13 @@ h1 + p {
     display: inline;
     padding: 10px 10px;
 }
+
+.fixed-footer li:hover {
+    text-shadow: 0 0 5px #fff;
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
 
 .title {
     padding-right: 40px;
