@@ -81,6 +81,12 @@ h3 {
 
 h4 {
   padding-bottom: 2px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: red;
 }
 
 .main-panel {
@@ -99,14 +105,20 @@ h4 {
     right: 5%;
     top: 25%;
     bottom: 100px;
-    max-width: 400px;
+    width: 400px;
     background-color: rgba(255, 255, 255, 0.85);
     overflow-y: auto;
 }
 
-
+.panel h3 {
+  padding-bottom: 30px;
+}
 .about-panel, .video-panel, .podcasts-panel, .webcam-panel {
     display: none;
+}
+
+.webcam-panel p {
+  font-family: "Courier New", Courier, monospace;
 }
 
 .show-panel {
@@ -164,7 +176,28 @@ h4 {
 }
 
 .video-wrapper {
-  padding-top: 10px;
   padding-bottom: 25px;
+}
+
+.podcast-logo {
+  width: 75px;
+  display: inline-block;
+  background-color: blue;
+  margin-bottom: 15px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.podcast-logo img {
+  display: block;
+}
+
+.podcast-description {
+  width: 290px;
+  display: inline-block;
+  margin-bottom: 15px;
+  vertical-align: top;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
