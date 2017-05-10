@@ -84,7 +84,7 @@ h4 {
   font-weight: 700;
 }
 
-a {
+.panel a {
   text-decoration: none;
   color: red;
 }
@@ -168,6 +168,28 @@ a {
     text-shadow: 0 0 5px #fff;
     transform:scale(1.1);
     cursor: pointer;
+}
+
+.social-icons {
+  position: absolute;
+  right: 0;
+  padding-right: 50px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.social-icons i {
+  padding-left: 25px;
+}
+
+.social-icons i:hover {
+    text-shadow: 0 0 5px #fff;
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: inherit;
 }
 
 
