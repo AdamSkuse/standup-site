@@ -1,8 +1,6 @@
-.box {
-  a {
-    display:block;
-  }
-}
+@import "normalize.css";
+@import "base/_global.css";
+@import "modules/_footer";
 @font-face {
     font-family: 'A-Love-of-Thunder';
     src:url('fonts/A-Love-of-Thunder.ttf.woff') format('woff'),
@@ -12,59 +10,12 @@
     font-weight: normal;
     font-style: normal;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   sasdadaasdasdasdaLicense: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 body {        
     padding-top: 60px;
     padding-bottom: 40px;
     box-sizing: border-box;
+    margin: 0;
 }
 
 h1 { 
@@ -88,6 +39,7 @@ h4 {
   padding-bottom: 2px;
   font-weight: 700;
 }
+
 
 .panel a {
   text-decoration: none;
@@ -131,12 +83,9 @@ h4 {
     padding: 10px;
 }
 
-.fixed-header, .fixed-footer {
-    position: fixed;        
-    z-index: 5;
- }
-
 .fixed-header {
+    position: fixed;
+    z-index: 5;
     top: 0;
     right: 0;
     padding: 10px;
@@ -144,36 +93,6 @@ h4 {
     background-color: rgba(255, 255, 255, 0.85);
 }
 
-.fixed-footer {
-    width: 100%;
-    bottom: 0;
-    height: 100px;
-    background: #000;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'A-Love-of-Thunder', 'Arial Black', Gadget, sans-serif;
-    font-size: 1.5em;
-
-}
-
-.fixed-footer ul {
-    list-style-type: none;
-    margin: 0;
-}
-
-.fixed-footer li {
-    display: inline;
-    padding: 10px 10px;
-}
-
-.fixed-footer li:hover {
-    text-shadow: 0 0 5px #fff;
-    transform:scale(1.1);
-    cursor: pointer;
-}
 
 .social-icons {
   position: absolute;
