@@ -1,0 +1,10 @@
+.main-section {
+    font-family: 'IM Fell Great Primer', serif;
+    line-height: 125%;
+}
+
+.main-section__image {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+}

@@ -1,0 +1,13 @@
+.fixed-header {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.fixed-header__title {
+  padding-right: 40px;
+}
